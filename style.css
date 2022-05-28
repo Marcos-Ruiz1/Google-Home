@@ -1,0 +1,55 @@
+body{
+    background-color: #272727;
+}
+#gmail{
+    color: white;
+    font-family: sans-serif;
+    font-size: 8px;
+    margin-left: 82%;
+    margin-top: 40%;
+}
+#imagenes{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 60%;
+    font-size: 8px;
+    margin-left: 86%;
+
+
+}
+input{
+    background-color: #5086c1;
+    border-color: #5086c1;
+    border-radius: 4px;
+    font-size: 8px;
+    height: 23px;
+    width: 60px;
+    margin-top:auto;
+    margin-left:91.9%;
+}
+#google{
+    height: 50px;
+    width: 150px;
+    margin: 5px 150px 0px 300px;
+    
+}
+#microfono{
+    height: 15px;
+    width: 15px;
+    margin: 10px 0px 0px 233px;
+}
+#lupa{
+    height: 15px;
+    width: 15px;
+    margin: 10px 0px 0px 248px;
+
+}
+.buscador{
+    background-color: #272727;
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    height: 20px;
+    width: 300px;
+    margin: 10px 0px 0px 225px;
+}
