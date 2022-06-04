@@ -1,32 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Body del proyecto*/
 body{
     background-color: #272727;
 }
-#gmail{
-    color: white;
-    font-family: sans-serif;
-    font-size: 8px;
-    margin-left: 82%;
-    margin-top: 40%;
-}
-#imagenes{
-    color: white;
-    font-family: sans-serif;
-    margin-left: 60%;
-    font-size: 8px;
-    margin-left: 86%;
 
-
+/*Barra de navegación del proyecto*/
+.navegador{
+    list-style: none;
+    font-family: sans-serif;
+    margin: 16px 0px 16px 600px;
 }
-input{
+.navegador__Item{
+    display: inline-block;
+}
+.navegador__Item a{
+    color: white;
+    text-decoration: none;
+    font-size: 8px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.navegador__Item a:hover{
+    color: green;
+}
+.navegador__Item input{
     background-color: #5086c1;
     border-color: #5086c1;
     border-radius: 4px;
     font-size: 8px;
     height: 23px;
     width: 60px;
-    margin-top:auto;
-    margin-left:91.9%;
+    margin-left: 10px;
 }
+
+/*Selector #google, #microfono y #Lupa son las imagenes que se utilizan en la página.*/
 #google{
     height: 50px;
     width: 150px;
@@ -44,6 +56,8 @@ input{
     margin: 10px 0px 0px 248px;
 
 }
+
+/*Clase buscador que nos diseña la barra buscadora que crea el espacio donde se escribirá lo que el usuario buscará.*/
 .buscador{
     background-color: #272727;
     color: white;
