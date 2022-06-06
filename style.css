@@ -37,6 +37,9 @@ body{
     width: 60px;
     margin-left: 10px;
 }
+.navegador__Item input:hover{
+    color: white;
+}
 
 /*Selector #google, #microfono y #Lupa son las imagenes que se utilizan en la página.*/
 #google{
@@ -66,4 +69,55 @@ body{
     height: 20px;
     width: 300px;
     margin: 10px 0px 0px 225px;
+}
+
+/*Pie de página del proyecto*/
+footer{
+    background-color: #171717;
+    height: 55px;
+    margin-top: 150px;
+}
+p{
+    color: #9aa0a6;
+    font-family: sans-serif;
+    font-size: 9px;
+    margin: 0px 20px 0 20px;
+    padding: 5px 0px 5px 0px;
+}
+hr{
+    color: #9aa0a6;
+}
+.footer{
+    list-style: none;
+    font-family: sans-serif;
+    margin: 0px 20px 0px 660px;
+    padding: 5px 0px 5px 0px;
+}
+.footer__Item{
+    display: inline-block;
+}
+.footer__Item a{
+    color: #9aa0a6;
+    text-decoration: none;
+    font-size: 8px;
+}
+.footer__Item a:hover{
+    color: white;
+}
+.footer2{
+    list-style: none;
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-bottom: 70px;
+}
+.footer__Item2{
+    display: inline-block;
+}
+.footer__Item2 a{
+    color: #9aa0a6;
+    text-decoration: none;
+    font-size: 8px;
+}
+.footer__Item2 a:hover{
+    color: white;
 }
