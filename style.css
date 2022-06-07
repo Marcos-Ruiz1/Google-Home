@@ -16,7 +16,7 @@ body{
     margin: 16px 0px 16px 600px;
 }
 .navegador__Item{
-    display: inline-block;
+    display: inline-block; 
 }
 .navegador__Item a{
     color: white;
@@ -26,7 +26,8 @@ body{
     margin-right: 5px;
 }
 .navegador__Item a:hover{
-    color: green;
+    color: white;
+    text-decoration: underline;
 }
 .navegador__Item input{
     background-color: #5086c1;
@@ -37,8 +38,10 @@ body{
     width: 60px;
     margin-left: 10px;
 }
-.navegador__Item input:hover{
-    color: white;
+#button:hover{
+    background-color: white;
+    border-color: white;
+    text-decoration: underline;
 }
 
 /*Selector #google, #microfono y #Lupa son las imagenes que se utilizan en la página.*/
@@ -63,12 +66,15 @@ body{
 /*Clase buscador que nos diseña la barra buscadora que crea el espacio donde se escribirá lo que el usuario buscará.*/
 .buscador{
     background-color: #272727;
+    font: sans-serif;
+    font-size: 10px;
     color: white;
-    border: 1px solid white;
-    border-radius: 12px;
     height: 20px;
     width: 300px;
     margin: 10px 0px 0px 225px;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 5px;
 }
 
 /*Pie de página del proyecto*/
@@ -103,6 +109,7 @@ hr{
 }
 .footer__Item a:hover{
     color: white;
+    text-decoration: underline;
 }
 .footer2{
     list-style: none;
