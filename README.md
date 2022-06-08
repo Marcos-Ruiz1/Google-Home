@@ -6,3 +6,6 @@ Some changes have been done on the navegator section. The semanthic HTML has bee
 
 06/06/2022
 Footer seection has been added. Some parts of it is not working perfectly, but it has the semanthic HTML and some good designs.
+
+07/06/2022
+Footer text has been center in CSS style. the main tag has been added to increase the height on CSS style. It also been added a padding on the search box. Finally, some trash code, it was delated it.
