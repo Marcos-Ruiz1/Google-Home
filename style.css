@@ -13,7 +13,7 @@ body{
 .navegador{
     list-style: none;
     font-family: sans-serif;
-    margin: 16px 0px 16px 600px;
+    margin: 6px 0px 10px 600px;
 }
 .navegador__Item{
     display: inline-block; 
@@ -45,13 +45,13 @@ body{
 
 /*Main del proyecto*/
 main{
-    height: 268px;
+    height: 285px;
 }
 
 /*Selector #google, #microfono y #Lupa son las imagenes que se utilizan en la página.*/
 #google{
-    height: 50px;
-    width: 150px;
+    height: 58px;
+    width: 178px;
     margin: 5px 150px 0px 300px;
     
 }
@@ -73,19 +73,21 @@ main{
     font: sans-serif;
     font-size: 9px;
     color: white;
-    height: 20px;
-    width: 300px;
+    height: 25px;
+    width: 325px;
     margin: 10px 0px 0px 225px;
     border: 1px solid white;
     border-radius: 12px;
-    padding: 5px;
+    padding-left: 25px;
+}
+.buscador:hover{
+    background-color: #3c3c3c;
 }
 
 /*Pie de página del proyecto*/
 footer{
     background-color: #171717;
     height: 55px;
-    /*margin-top: 150px;*/
 }
 p{
     color: #9aa0a6;
@@ -94,16 +96,11 @@ p{
     margin: 0px 20px 0 20px;
     padding: 5px 0px 5px 0px;
 }
-hr{
-    color: #9aa0a6;
-}
 .footer{
     list-style: none;
     text-align: center;
     font-family: sans-serif;
-    /*margin: 0px 20px 0px 660px;*/
     padding: 5px 0px 5px 0px;
-    
 }
 .footer__Item{
     display: inline-block;

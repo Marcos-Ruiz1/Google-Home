@@ -9,3 +9,6 @@ Footer seection has been added. Some parts of it is not working perfectly, but i
 
 07/06/2022
 Footer text has been center in CSS style. the main tag has been added to increase the height on CSS style. It also been added a padding on the search box. Finally, some trash code, it was delated it.
+
+11/06/2022
+little changes over all the web site. New links added on the footer section, new hover design of background-color on the search box, "hr" tag size and color changed. Finally, height main and nav have been changed.
