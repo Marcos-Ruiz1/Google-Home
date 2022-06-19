@@ -12,3 +12,7 @@ Footer text has been center in CSS style. the main tag has been added to increas
 
 11/06/2022
 little changes over all the web site. New links added on the footer section, new hover design of background-color on the search box, "hr" tag size and color changed. Finally, height main and nav have been changed.
+
+17/06/2022
+Lupa and microphone symbols have been added on the "search box section" instead to have pictures about.
+A second botton have been added next to sign in botton. 

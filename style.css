@@ -42,6 +42,12 @@ body{
     background-color: white;
     border-color: white;
 }
+#button2{
+    width: 17px;
+    height: 17px;
+    color: white;
+}
+
 
 /*Main del proyecto*/
 main{
