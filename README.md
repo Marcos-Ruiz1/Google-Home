@@ -16,3 +16,6 @@ little changes over all the web site. New links added on the footer section, new
 17/06/2022
 Lupa and microphone symbols have been added on the "search box section" instead to have pictures about.
 A second botton have been added next to sign in botton. 
+
+16/12/2023
+Implementation of "display:flex" and "display:grid" configuration, changes "rem" and "%" instead "px". This has been done with the purpose to improve a better responsive performance of the webSite. Some color style and CSS designs have been added.

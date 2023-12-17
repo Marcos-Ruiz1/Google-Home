@@ -1,104 +1,155 @@
+/*Configuración básica para convertir px a rem*/
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
+html{
+    font-size: 62.5%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*variables para los colores */
+:root {
+    --primary-black-color: #272727;
+    --secundary-black-color: #171717;
+    --third-black-color: #3c3c3c;
+    --primary-blue-color: #8ab4f8;
+    --primary-font-color: #FFFFFF;
+    --secondary-font-color: #9aa0a6;
+  }
 
 /*Body del proyecto*/
 body{
-    background-color: #272727;
+    background-color: var(--primary-black-color);
+    height: 100vh;
+    overflow: hidden;
 }
 
 /*Barra de navegación del proyecto*/
+nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+}
 .navegador{
     list-style: none;
     font-family: sans-serif;
-    margin: 6px 0px 10px 600px;
+    display: flex;
+    align-items: center;
+    column-gap: 2.5rem;
+    margin-right: 4rem;
 }
 .navegador__Item{
     display: inline-block; 
 }
 .navegador__Item a{
-    color: white;
+    color: var(--primary-font-color);
     text-decoration: none;
-    font-size: 8px;
+    font-size: 1.6rem;
     display: inline-block;
-    margin-right: 5px;
 }
 .navegador__Item a:hover{
-    color: white;
+    color: var(--primary-font-color);
     text-decoration: underline;
 }
 .navegador__Item input{
-    background-color: #5086c1;
-    border-color: #5086c1;
-    border-radius: 4px;
-    font-size: 8px;
-    height: 23px;
-    width: 60px;
-    margin-left: 10px;
+    background-color: var(--primary-blue-color);
+    border-color: var(--primary-blue-color);
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    height: 3.5rem;
+    width: 12rem;
+
 }
 #button:hover{
-    background-color: white;
-    border-color: white;
+    background-color: var(--primary-font-color);
+    border-color: var(--primary-font-color);
 }
-#button2{
-    width: 17px;
-    height: 17px;
-    color: white;
+.navegador__Item svg{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--primary-font-color);
 }
 
 
-/*Main del proyecto*/
+/*Main del proyecto con GRID*/
 main{
-    height: 285px;
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.containerMain{
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 6;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.containerMain figure{
+    grid-column: 4 / span 3;
+}
+.containerMain div{
+    grid-column: 3 /span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerBuscadorItems{
+    width: 100%;
+    height: 100%;
 }
 
 /*Selector #google, #microfono y #Lupa son las imagenes que se utilizan en la página.*/
 #google{
-    height: 58px;
-    width: 178px;
-    margin: 5px 150px 0px 300px;
-    
+    height: 100%;
+    width: 100%;
 }
 #microfono{
     height: 15px;
     width: 15px;
-    margin: 10px 0px 0px 233px;
 }
 #lupa{
     height: 15px;
     width: 15px;
-    margin: 10px 0px 0px 248px;
-
 }
 
 /*Clase buscador que nos diseña la barra buscadora que crea el espacio donde se escribirá lo que el usuario buscará.*/
 .buscador{
-    background-color: #272727;
+    background-color: var(--primary-black-color);
     font: sans-serif;
-    font-size: 9px;
-    color: white;
-    height: 25px;
-    width: 325px;
-    margin: 10px 0px 0px 225px;
-    border: 1px solid white;
-    border-radius: 12px;
-    padding-left: 25px;
+    font-size: 1.9rem;
+    color: var(--primary-font-color);
+    height: 5rem;
+    width: 95%;
+    border: 0.1rem solid var(--secondary-font-color);
+    border-radius: 2.5rem;
+    padding-left: 2.5rem;
 }
 .buscador:hover{
-    background-color: #3c3c3c;
+    background-color: var(--third-black-color);
 }
 
 /*Pie de página del proyecto*/
 footer{
-    background-color: #171717;
-    height: 55px;
+    background-color: var(--secundary-black-color);
+    width: 100%;
+    height: 15%;
+}
+hr{
+    color: var(--primary-black-color); 
+    size: 0.1rem;
 }
 p{
-    color: #9aa0a6;
+    color: var(--secondary-font-color);
     font-family: sans-serif;
-    font-size: 9px;
+    font-size: 1.6rem;
     margin: 0px 20px 0 20px;
     padding: 5px 0px 5px 0px;
 }
@@ -113,11 +164,11 @@ p{
     margin-right: 5px;
 }
 .footer__Item a{
-    color: #9aa0a6;
+    color: var(--secondary-font-color);
     text-decoration: none;
-    font-size: 8px;
+    font-size: 1.5rem;
 }
 .footer__Item a:hover{
-    color: white;
+    color: var(--primary-font-color);
     text-decoration: underline;
 }
