@@ -19,3 +19,6 @@ A second botton have been added next to sign in botton.
 
 16/12/2023
 Implementation of "display:flex" and "display:grid" configuration, changes "rem" and "%" instead "px". This has been done with the purpose to improve a better responsive performance of the webSite. Some color style and CSS designs have been added.
+
+19/12/2023
+it has been implemented an apps container on the navegator bar at square icon. First time that It is javascript implemented in the porject to manipulate DOM and managment of events with eventsListenner and function to show and close the app container("function showAppsWindow", "funciton closeAppsWindow"). Implementation of "display:flex" inside the container to manipulate and design the whole app items. Finally, all icons and images have been added to a new folder to organize the project structure.

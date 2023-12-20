@@ -7,6 +7,7 @@
 html{
     font-size: 62.5%;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -18,6 +19,7 @@ html{
     --primary-blue-color: #8ab4f8;
     --primary-font-color: #FFFFFF;
     --secondary-font-color: #9aa0a6;
+    --hover-color: rgba(232,234,237,.08);
   }
 
 /*Body del proyecto*/
@@ -45,7 +47,8 @@ nav{
     margin-right: 4rem;
 }
 .navegador__Item{
-    display: inline-block; 
+    display: inline-block;
+    cursor:pointer; 
 }
 .navegador__Item a{
     color: var(--primary-font-color);
@@ -67,6 +70,7 @@ nav{
 
 }
 #button:hover{
+    cursor: pointer;
     background-color: var(--primary-font-color);
     border-color: var(--primary-font-color);
 }
@@ -74,6 +78,90 @@ nav{
     width: 3rem;
     height: 3rem;
     fill: var(--primary-font-color);
+}
+.navegador__Item svg:hover{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    opacity: 1;
+    border-radius: 2rem;
+}
+
+/*Container de apps al presionar botón*/
+.containerApps{
+    background-color: var(--secundary-black-color);
+    border-color: var(--primary-black-color);
+    border-style: solid;
+    border-width: 0.9rem;
+    border-radius: 4.5rem;
+    box-shadow: 0 4px 8px 0 var(--secundary-black-color), 0 6px 20px 0 var(--secundary-black-color);
+    display: none;
+    width: 40rem;
+    height: 45rem;
+    position: absolute;
+    left: 93rem;
+    top: 7rem;
+    z-index: 1;
+    overflow: auto;
+
+    /*estilos para cuando se presiono el containerApps*/
+    padding-top: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    row-gap: 0.5rem;
+}
+.containerApps::-webkit-scrollbar{
+    width: 0.7rem;
+
+}
+::-webkit-scrollbar-track {
+    background: var(--primary-black-color); 
+  }
+.containerApps::-webkit-scrollbar-thumb {
+    background: var(--hover-color);
+    border-radius: 0.5rem; 
+}
+.containerApps::-webkit-scrollbar-thumb:hover{
+    background: var(--secondary-font-color);
+}
+.itemApp{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--secundary-black-color);
+    border-style: solid;
+    border-color: var(--secundary-black-color);
+    border-width: 0.1rem;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemApp li{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemApp a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemApp img{
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+}
+.itemApp:hover{
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
 }
 
 
@@ -135,6 +223,46 @@ main{
 .buscador:hover{
     background-color: var(--third-black-color);
 }
+
+/*Container de apps al presionar botón
+.containerApps{
+    background-color: var(--secundary-black-color);
+    border-color: var(--primary-black-color);
+    border-style: solid;
+    border-width: 0.9rem;
+    border-radius: 4.5rem;
+    box-shadow: 0 4px 8px 0 var(--secundary-black-color), 0 6px 20px 0 var(--secundary-black-color);
+    display: none;
+    width: 40rem;
+    height: 45rem;
+    position: absolute;
+    left: 93rem;
+    top: 7rem;
+    z-index: 1;
+    overflow: auto;
+}
+.containerApps::-webkit-scrollbar{
+    width: 0.7rem;
+
+}
+::-webkit-scrollbar-track {
+    background: var(--primary-black-color); 
+  }
+.containerApps::-webkit-scrollbar-thumb {
+    background: var(--hover-color);
+    border-radius: 0.5rem; 
+}
+.containerApps::-webkit-scrollbar-thumb:hover{
+    background: var(--secondary-font-color);
+}
+.itemApp{
+    width: 12rem;
+    height: 12rem;
+    background-color: #8ab4f8;
+    border-style: solid;
+    border-color: var(--secundary-black-color);
+    border-width: 0.5rem;
+}*/
 
 /*Pie de página del proyecto*/
 footer{
